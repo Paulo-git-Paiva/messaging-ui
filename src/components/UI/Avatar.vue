@@ -7,3 +7,13 @@ defineProps<{
   src: string;
 }>();
 </script>
+
+<style scoped>
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+</style>
