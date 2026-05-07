@@ -17,12 +17,6 @@ input {
   font-family: inherit;
 }
 
-.app-layout {
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-}
-
 /* SIDEBAR */
 
 .sidebar {
