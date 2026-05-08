@@ -71,7 +71,7 @@ function handleKeyDown(event: KeyboardEvent) {
   padding: 6px 12px;
   resize: none;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.2s;
 }
 

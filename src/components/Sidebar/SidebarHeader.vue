@@ -63,7 +63,7 @@ import { Search, Archive, MessageSquarePlus } from "lucide-vue-next";
   border: none;
   background: transparent;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .sidebar-divider {
