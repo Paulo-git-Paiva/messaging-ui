@@ -7,6 +7,7 @@ export const useChatStore = defineStore("chat", {
     conversations: mockConversations,
     activeConversationId: 1,
     typing: false,
+    mobileChatOpened: false,
   }),
 
   getters: {
@@ -20,6 +21,14 @@ export const useChatStore = defineStore("chat", {
   actions: {
     selectConversation(id: number) {
       this.activeConversationId = id;
+
+      if (window.innerWidth <= 768) {
+        this.mobileChatOpened = true;
+      }
+    },
+
+    closeMobileChat() {
+      this.mobileChatOpened = false;
     },
 
     sendMessage(text: string) {

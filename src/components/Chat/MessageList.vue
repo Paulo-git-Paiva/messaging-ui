@@ -44,3 +44,45 @@ watch(
   },
 );
 </script>
+<style scoped>
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 120px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.messages-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 30px 0 20px;
+}
+
+.messages-divider::before,
+.messages-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.messages-divider span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.audit-alert {
+  align-self: center;
+  background: #fff8db;
+  border: 1px solid #facc15;
+  color: #a16207;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+</style>

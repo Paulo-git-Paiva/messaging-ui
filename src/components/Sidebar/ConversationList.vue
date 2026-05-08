@@ -14,3 +14,9 @@ import ConversationItem from "./ConversationItem.vue";
 
 const store = useChatStore();
 </script>
+<style scoped>
+.conversation-list {
+  flex: 1;
+  overflow-y: auto;
+}
+</style>
